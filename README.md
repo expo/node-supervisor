@@ -32,11 +32,11 @@ clean up all the inter-module references, and without a whole new
 
       --ignore-symlinks
         Ignore symlinks :)
-        
+
       -s|--timestamp
         Log timestamp after each run.
         Make it easy to tell when the task last ran.
-        
+
       -p|--poll-interval <milliseconds>
         How often to poll watched files for changes.
         Defaults to Node default.
@@ -82,7 +82,7 @@ clean up all the inter-module references, and without a whole new
 	  -k|--instant-kill
 	    Instantly kills the server process, instead of gracefully shutting down the server.
 		This can be useful when the node app has events attached to SIGTERM or SIGINT so as to do a graceful shutdown before the process exits.
-		
+
      -RV|--restart-verbose
         Logs the file(s) that caused supervisor to restart
 
@@ -92,6 +92,10 @@ clean up all the inter-module references, and without a whole new
       -q|--quiet
         Suppress DEBUG messages
 
+      --exit-gracefully
+        Supervisor will not stop when SIGINT received (ex. Ctrl-C was used).
+        Instead, SIGINT will be passed to child process.
+        If used with \"-n success\" supervisor will exit after child terminates with code 0.
 
     Options available after start:
       rs - restart process. Useful when you want to restart your program even
