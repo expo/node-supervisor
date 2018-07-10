@@ -1,6 +1,6 @@
 {
-  "name": "supervisor",
-  "version": "0.12.0",
+  "name": "@expo/supervisor",
+  "version": "0.13.0",
   "description": "A supervisor program for running nodejs programs",
   "author": "Isaac Z. Schlueter <i@izs.me>",
   "license": "MIT",
@@ -31,14 +31,15 @@
     "jazzzz <jazzzz@gmail.com>",
     "philpill <github@philpill.net>",
     "rma4ok <rma4ok@gmail.com>",
-    "Petru Isfan <petru.isfan@gmail.com>"
+    "Petru Isfan <petru.isfan@gmail.com>",
+    "Jakub Stepak <jakub.ste@gmail.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/petruisfan/node-supervisor.git"
+    "url": "git://github.com/expo/node-supervisor.git"
   },
-  "bugs": "https://github.com/petruisfan/node-supervisor/issues",
-  "homepage": "https://github.com/petruisfan/node-supervisor/",
+  "bugs": "https://github.com/expo/node-supervisor/issues",
+  "homepage": "https://github.com/expo/node-supervisor/",
   "main": "lib/supervisor.js",
   "bin": {
     "node-supervisor": "lib/cli-wrapper.js",
@@ -50,7 +51,6 @@
   "scripts": {
     "test": "./node_modules/nodeunit/bin/nodeunit test/*.test.js"
   },
-  "preferGlobal": true,
   "devDependencies": {
     "nodeunit": "~0.9.0"
   }
